@@ -18,7 +18,7 @@ export const frame_error = (text: string) => {
 
 // Home
 export const frame_home = () => {
-  const body = "👋 Welcome to frames";
+  const body = "NEAR NFT Historic Minting";
   console.log(body);
   return {
     buttons: [
@@ -26,7 +26,7 @@ export const frame_home = () => {
         label: "Mint the first ever Near NFT",
       },
     ] as [FrameButtonMetadata, ...FrameButtonMetadata[]],
-    image: `http://cryptoplaza.es/wp-content/uploads/2024/03/mint.jpeg`,
+    image: `https://i.postimg.cc/hjWQphw9/mint.png`,
     post_url: `${env.NEXT_PUBLIC_URL}/api/next`,
   };
 };
@@ -44,7 +44,7 @@ export const frame_next = (fid: string, address: string, text: string) => {
         label: "Home",
       },
     ] as [FrameButtonMetadata, ...FrameButtonMetadata[]],
-    image: `http://cryptoplaza.es/wp-content/uploads/2024/03/congrats.jpeg`,
+    image: `https://i.postimg.cc/Km14RrCL/congrats.jpg`,
     post_url: `${env.NEXT_PUBLIC_URL}/api/home`,
   };
 };
